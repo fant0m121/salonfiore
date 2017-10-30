@@ -1,0 +1,108 @@
+//- Custom Configuration
+block config
+    //- Setup site's base URL to match the "baseUrl" key within `package.json`
+    //- Otherwise default to relative pathing
+    - var baseUrl = config.baseUrl || './'
+
+doctype html
+<html class='no-js' lang='en'>
+
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title salonfiore
+    meta(name='description', content= 'A new Yeogurt application')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    block stylesheets
+        link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+        link(rel='stylesheet', href= baseUrl + 'styles/style.css')
+
+body.ui-page
+    .h1
+        .content
+            ul#top-menu.menu
+                li
+                    a(href='/about/') О нас
+                li(data-bg-color='')
+                    a(href='/services/') Услуги
+                li
+                    a(href='/catalog/') Магазин
+                li
+                    a(href='/sale/') АКЦИИ
+                li
+                    a(href='/press/') ПРЕССА
+                li
+                    a(href='/reviews/') ОТЗЫВЫ
+                li
+                    a(href='/contacts/') Контакты
+            div(style='/* width: 268px; */float: left;height: 100%;padding: 6px 0 6px 6px;background-color: #00bcf4;color: #3a4559 !important;font-weight: bold;')
+                div(style='white-space: nowrap; display: inline-block; float: left; width: 134px;')
+                    a.ya-phone(style='color: #3a4559 !important;', href='tel:+74959539815', onclick="ga('send', 'event', 'tel', 'click');yaCounter37721308.reachGoal('tel');") +7 (495) 953-98-15
+                div(style='white-space: nowrap; display: inline-block; float: left;')
+                    a.ya-phone(style='color: #3a4559 !important;', href='intent://send/+79654303273#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end') What's up: +7 (965) 430-32-73
+            .share-top
+                style(type='text/css').
+                    .f1-icon {height: 30px;}
+                    .f1-icon span{width:auto;}
+                script(type='text/javascript', src='//yandex.st/share/share.js', charset='utf-8')
+                .yashare-auto-init(data-yasharel10n='ru', data-yasharequickservices='vkontakte,facebook,twitter', data-yasharetheme='counter')
+                a.share-a(href='http://instagram.com/SALONFIORE')
+                    img(src='/images/instagram.png', alt='instaram')
+        .clear
+
+    block content
+
+    .ui-footer
+        .l-grid.l-grid--container
+            .l-row.l-row--xs-space-between.l-row--xs-middle
+                .l-col.l-col--xs-12.l-col--md-auto
+                    .ui-footer__menu
+                        ul.ui-bottom-menu
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/about/') О нас
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/services/') Услуги
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/catalog/') Магазин
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/sale/') АКЦИИ
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/press/') ПРЕССА
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/reviews/') ОТЗЫВЫ
+                            li.ui-bottom-menu__item
+                                a.ui-bottom-menu__link(href='/contacts/') Контакты
+                .l-col.l-col--xs-12.l-col--md-auto
+                    .ui-price-list(onmouseover="$('.js-price-more').toggle(true);", onmouseout="$('.js-price-more').toggle(false);")
+                        a.ui-price-list__link(href='#', onclick='return false;') ПРАЙС-ЛИСТ
+                        .ui-price-list__content.js-price-more
+                            a(href='/face/prays-list-litso/') лицо
+                            br
+                            a(href='/hand/prays-list-nogi/') Ноги
+                            br
+                            a(href='/hand/prays-list-ruki/') Руки
+                            br
+                            a(href='/body/prays-list-telo/') Тело
+                            br
+                            a(href='/hair/prays-list-volosy/') ВОЛОСЫ
+                            br
+            .l-row
+                .l-col.l-col--xs-12.l-col--md-4
+                    .ui-footer__copy © 2007 - 2017 Fiore
+                    .ui-footer__licence
+                        div Салон красоты
+                        div Медицинская лицензия № ЛО-77-01-004316
+                .l-col.l-col--xs-12.l-col--md-4
+                    .ui-footer__address
+                        .ui-footer__address-title На Ордынке
+                        .ui-footer__address-line Москва, Большая Ордынка 13/9, 2-й этаж
+                        .ui-footer__address-line м. Третьяковская / м. Новокузнецкая
+                        .ui-footer__address-line
+                            span.ya-phone 8 (495) 953-98-15
+                .l-col.l-col--xs-12.l-col--md-4
+                    a.button-footer(href='#modal-online', onclick='javascript:modal();') ЗАПИСЬ ОНЛАЙН
+
+    block scripts
+        script(src= baseUrl + 'scripts/main.js')
+
+</html>

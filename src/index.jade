@@ -1,0 +1,251 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+    .h2
+        .content
+            a.button-fancybox(href='#modal-online', onclick="javascript:modal();ga('send', 'event', 'booking_click', 'click');yaCounter37721308.reachGoal('booking_click');") ЗАПИСЬ ОНЛАЙН
+            .clear
+            .slider.slider3
+                .sliderContent
+                    #bx_1454625752_670.item
+                        img(src='/upload/iblock/d9a/d9a1fffaedc03b95a60a500778d697f2.png')
+                        .rating-info
+                            h2 КОСМЕТОЛОГИЯ
+                            span от 3000 руб.
+                    #bx_1454625752_687.item
+                        img(src='/upload/iblock/4c7/4c76a255ccda7b70c9a9155b012acdd5.png')
+                        .rating-info
+                            h2 СТРИЖКА
+                            span от 3000 руб.
+                    #bx_1454625752_661.item
+                        img(src='/upload/iblock/625/625dfc354d10fc59c610e949e9ab42a5.png')
+                        .rating-info
+                            h2 УКЛАДКА
+                            span от 1500 руб.
+                    #bx_1454625752_102.item
+                        img(src='/upload/iblock/371/371ee2ffc11fe92bc5d9a9e3eb45c107.png')
+                        .rating-info
+                            h2 ОКРАШИВАНИЕ
+                            span от 4000 руб.
+                    #bx_1454625752_101.item
+                        img(src='/upload/iblock/538/538265ca7ac308d0746e72909622f8ce.png')
+                        .rating-info
+                            h2 МАНИКЮР
+                            span от 1100 руб.
+                .sg_item
+                    .bx_catalog_text
+                        ul.bx_catalog_text_ul
+                            li#bx_1623270341_17
+                                a(href='/hair/', onmouseover="$(this).toggleClass('active',true);showSection(this,17);") Волосы
+                            li#bx_1623270341_18.color1
+                                a(href='/face/', onmouseover="$(this).toggleClass('active',true);showSection(this,18);") Лицо
+                            li#bx_1623270341_19.color2
+                                a(href='/body/', onmouseover="$(this).toggleClass('active',true);showSection(this,19);") Тело
+                            li#bx_1623270341_20.color3
+                                a(href='/hand/', onmouseover="$(this).toggleClass('active',true);showSection(this,20);") Руки + Ноги
+                        div(style='clear: both;')
+            .clear
+            #sg-section-17.choose(style='display:none')
+                p
+                    a(href='/hair/prays-list-volosy/') Прайс лист ВОЛОСЫ
+                    a(href='/hair/strizhka/') Стрижка
+                    a(href='/hair/ukladka/') Укладка
+                    a(href='/hair/tonirovanie/') Тонирование
+                    a(href='/hair/melirovanie/') Мелирование
+                .clear
+                p.cp2
+                    a(href='/hair/blondirovanie/') Блондирование
+                    a(href='/hair/ukhod-za-kozhey-golovy-i-volosami/') Уход за кожей головы и волосами
+                    a(href='/hair/okrashivanie-volos/') Окрашивание волос
+                    a(href='/hair/okrashivanie-volos/kydra/') Kydra
+                    a(href='/hair/okrashivanie-volos/materia-lebel/') Materia Lebel
+                .clear
+                p.cp3
+                    a(href='/hair/okrashivanie-volos/balayazh/') Балаяж
+                    a(href='/hair/keratinovoe-vypryamlenie/') Выпрямление волос
+                    a(href='/hair/keratinovoe-vypryamlenie/keratinovoe-vypryamlenie-keratin-complex/') Кератиновое выпрямление
+                    a(href='/hair/keratinovoe-vypryamlenie/keratinovoe-vypryamlenie-tsena/') Кератиновое выпрямление цена
+                    a(href='/hair/biolaminirovanie/') Биоламинирование
+                .clear
+                p.cp4
+                    a(href='/hair/biozavivka/') Биозавивка
+                    a(href='/hair/biozavivka/mossa/') Биозавивка mossa
+                .clear
+            #sg-section-18.choose(style='display:none')
+                p
+                    a(href='/face/prays-list-litso/') Прайс лист лицо
+                    a(href='/face/ukhod-za-litsom/') Уход за лицом
+                    a(href='/face/apparatnaya-kosmetologiya/') Аппаратная косметология
+                    a(href='/face/kriolift/') Криолифтинг
+                    a(href='/face/mezoterapiya/') Мезотерапия лица
+                .clear
+                p.cp2
+                    a(href='/face/konturnaya-plastika/') Контурная пластика
+                    a(href='/face/konturnaya-plastika/litsa/') Контурная пластика лица
+                    a(href='/face/konturnaya-plastika/tsena/') Цена
+                    a(href='/face/botox/') Ботокс
+                    a(href='/face/biorevitalizatsiya/') Биоревитализация
+                .clear
+                p.cp3
+                    a(href='/face/biorevitalizatsiya/teosyal-meso/') Teosyal-meso
+                    a(href='/face/biorevitalizatsiya/teosyal-redensity-puresense/') Teosyal redensity
+                    a(href='/face/piling-litsa/') Пилинг в салоне
+                    a(href='/face/piling-litsa/sredinniy/') Срединный пилинг
+                    a(href='/face/piling-litsa/glikoleviy/') Гликолевый пилинг
+                .clear
+                p.cp4
+                    a(href='/face/piling-litsa/poverhnostniy/') Поверхностный пилинг
+                    a(href='/face/piling-litsa/enzimniy/') Энзимный пилинг
+                    a(href='/face/piling-litsa/fruktoviy/') Фруктовый пилинг
+                    a(href='/face/piling-litsa/ultrazvukovoy-tseny/') Ультразвуковой пилинг цены
+                    a(href='/face/chistka-litsa-v-salone-krasoty/') Чистка лица
+                .clear
+                p.cp5
+                    a(href='/face/korrektsiya-brovey-i-resnits/') Коррекция бровей и ресниц
+                    a(href='/face/okrashivanie-brovey-resnits-khnoy/') Окрашивание бровей и ресниц хной
+                    a(href='/face/laminirovanie-resnits/') Ламинирование ресниц
+                    a(href='/face/laminirovanie-brovey/') Ламинирование бровей
+                    a(href='/face/express-lifting/') Экспресс-омоложение лица
+                .clear
+                p.cp6
+                    a(href='/face/radiolifting-rf/') Радиолифтинг
+                    a(href='/face/narashchivanie-resnits/') Наращивание ресниц
+                    a(href='/face/massazh-litsa/') Массаж лица
+                    a(href='/face/massazh-litsa/miofastsialniy/') Миофасциальный
+                    a(href='/face/massazh-litsa/klassicheskiy/') Классический
+                .clear
+            #sg-section-19.choose(style='display:none')
+                p
+                    a(href='/body/lazernaya-epilyatsiya/') Лазерная эпиляция
+                    a(href='/body/lazernaya-epilyatsiya/bikini/') Лазерная эпиляция бикини
+                    a(href='/body/lazernaya-epilyatsiya/diodnaya/') Диодная лазерная эпиляция
+                    a(href='/body/lazernaya-epilyatsiya/dlya-muzhchin/') Лазерная эпиляция для мужчин
+                    a(href='/body/lazernaya-epilyatsiya/guby/') Верхняя губа
+                .clear
+                p.cp2
+                    a(href='/body/lazernaya-epilyatsiya/litso/') Лицо
+                    a(href='/body/lazernaya-epilyatsiya/nogi/') Ноги
+                    a(href='/body/lazernaya-epilyatsiya/podmyshek/') Подмышки
+                    a(href='/body/lazernaya-epilyatsiya/ruki/') Руки
+                    a(href='/body/lazernaya-epilyatsiya/tseny-laser/') Цены
+                .clear
+                p.cp3
+                    a(href='/body/lazernaya-epilyatsiya/brovi/') Брови
+                    a(href='/body/lazernaya-epilyatsiya/dlya-zhenshchin/') Лазерная эпиляция для женщин
+                    a(href='/body/lazernaya-epilyatsiya/tela/') Лазерная эпиляция всего тела
+                    a(href='/body/lazernaya-epilyatsiya/podborodka/') Лазерная эпиляция подбородка
+                    a(href='/body/epilyatsiya-ruk/') Эпиляция рук
+                .clear
+                p.cp4
+                    a(href='/body/epilyatsiya-nog/') Эпиляция ног
+                    a(href='/body/bandazhnye-obertyvaniya/') Бандажные обертывания
+                    a(href='/body/vodoroslevye-obertyvaniya/') Водорослевые обертывания
+                    a(href='/body/epilyatsiya-muzhchin/') Эпиляция для мужчин
+                    a(href='/body/epilyatsiya-bikini/') Эпиляция бикини
+                .clear
+                p.cp5
+                    a(href='/body/epilyatsiya-bikini/voskom-glubokoe/') Эпиляция воском глубокого бикини
+                    a(href='/body/epilyatsiya-bikini/voskovaya/') Восковая эпиляция бикини
+                    a(href='/body/epilyatsiya-bikini/klassicheskoe/') Классическое бикини
+                    a(href='/body/voskovaya-epilyatsiya-epilyatsiya-voskom/') Восковая эпиляция (эпиляция воском)
+                    a(href='/body/prays-list-telo/') Прайс лист Тело
+                .clear
+            #sg-section-20.choose(style='display:none')
+                p
+                    a(href='/hand/manicure-s-pokrytiem/') Маникюр с покрытием
+                    a(href='/hand/manikur-vinylux/') Маникюр Винилюкс
+                    a(href='/hand/pokrytie-nogtey/') Покрытие ногтей
+                    a(href='/hand/shellac-french/') Шеллак френч
+                    a(href='/hand/kombinirovanniy-manicure/') Комбинированный маникюр
+                .clear
+                p.cp2
+                    a(href='/hand/snyatie-shellac/') Снятие шеллака
+                    a(href='/hand/pokrytie-vinylux/') Покрытие винилюкс
+                    a(href='/hand/obrabotka-natoptyshey/') Обработка натоптышей
+                    a(href='/hand/spa-ukhod-za-nogami/') СПА-уход за ногами
+                    a(href='/hand/obrabotka-slozhnogo-nogtya/') Обработка сложного ногтя
+                .clear
+                p.cp3
+                    a(href='/hand/obrabotka-mozoley/') Обработка мозолей
+                    a(href='/hand/neyl-art/') Нейл-арт
+                    a(href='/hand/ukreplenie-naturalnogo-nogtya/') Укрепление натурального ногтя
+                    a(href='/hand/narashchivanie-nogtey-v-salone-krasoty-fiore/') Наращивание ногтей в салоне красоты Fiore
+                    a(href='/hand/spa-uhod/') Спа уход за руками
+                .clear
+                p.cp4
+                    a(href='/hand/pokrytie-shellac-shellak/') Покрытие шеллак
+                    a(href='/hand/yaponskiy-manikyur/') Японский маникюр
+                    a(href='/hand/manikyur/') Маникюр
+                    a(href='/hand/pedikyur/') Педикюр
+                    a(href='/hand/pedikyur/french/') Педикюр френч
+                .clear
+                p.cp5
+                    a(href='/hand/pedikyur/shellac/') Педикюр shellac
+                    a(href='/hand/prays-list-nogi/') Прайс лист Ноги
+                    a(href='/hand/prays-list-ruki/') Прайс лист Руки
+                .clear
+            script.
+                function showSection(obj,id){
+                $('div.choose').toggle(false);
+                $('.sg_item ul li a').removeClass('active');
+                $('#sg-section-'+id).toggle(true);
+                $(obj).addClass('active');
+                }
+                $(document).ready(function() {
+                $('div.choose:first').toggle(true);
+                $('.sg_item ul li a:first').addClass('active');
+                });
+        .clear
+    .content
+        script(type='text/javascript').
+            $(document).ready(function(){
+            $('.michur').on('click',function(){
+            $('.map-21').hide();$('.map-11').show();
+            $(this).replaceWith("<h3 class='michur'>Ордынка</h3>");
+            $('.ordynka').replaceWith("<h2 class='ordynka'>Мичуринский</h2>");
+            });
+            $('.ordynka').on('click',function(){
+            $('.map-11').hide();$('.map-21').show();
+            $('.michur').replaceWith("<h2 class='michur'>Ордынка</h2>");
+            $(this).replaceWith("<h3 class='ordynka'>Мичуринский</h3>");
+            });
+            setTimeout(function(){$('.map-21').hide()}, 500);
+            });
+        .online
+            h1 Стрижки
+            p
+                | Профессионалы салона красоты Fiore помогут сделать вашу прическу безупречной в соответствии с вашими пожеланиями, будь то романтичная прическа для выпускного бала.
+            span от 3000
+            a.button-large.fancybox(href='#modal-online', onclick='javascript:modal();return false;') ЗАПИСЬ ОНЛАЙН
+        #bx_3017195560_1642.a2
+            span
+                img(src='/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg', width='240', height='169', alt='Halloween Party 26-27-28 октября!', title='Halloween Party 26-27-28 октября!')
+            a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        #bx_3017195560_1634.a2
+            span
+                img(src='/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg', width='240', height='120', alt='Coolifting - новинка года! Минус 10 лет за 5 минут', title='Coolifting - новинка года! Минус 10 лет за 5 минут')
+            a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
+        .clear
+        .map-11
+            .map-right
+                img(src='/bitrix/templates/fiore_main/img/map-right.png', alt='')
+            .bx-yandex-view-layout(style='height:350px; overflow:hidden;')
+                .bx-yandex-view-map(style='margin:0px 0px 0px -100px;')
+        .map-title
+            h1 Наш салон
+            h2.ordynka Ордынка
+        .clear
+        .news
+            h2 Акции
+            #bx_1392716086_1642.n1
+                a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+                span 23.10.2017
+            #bx_1392716086_1634.n1
+                a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
+                span 17.09.2017
+            #bx_1392716086_1616.n1
+                a(href='/sale/2017/fiore-na-lady-mail-ru/') Fiore на lady.mail.ru
+                span 30.04.2017
+    .clear
