@@ -213,38 +213,50 @@ block content
             });
             setTimeout(function(){jQuery('.map-21').hide()}, 500);
             });
-        .online
-            h1 Стрижки
-            p
-                | Профессионалы салона красоты Fiore помогут сделать вашу прическу безупречной в соответствии с вашими пожеланиями, будь то романтичная прическа для выпускного бала.
-            span от 3000
-            a.button-large.fancybox(href='#modal-online', onclick='javascript:modal();return false;') ЗАПИСЬ ОНЛАЙН
-        #bx_3017195560_1642.a2
-            span
-                img(src='http://salonfiore.ru/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg', width='240', height='169', alt='Halloween Party 26-27-28 октября!', title='Halloween Party 26-27-28 октября!')
-            a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
-        #bx_3017195560_1634.a2
-            span
-                img(src='http://salonfiore.ru/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg', width='240', height='120', alt='Coolifting - новинка года! Минус 10 лет за 5 минут', title='Coolifting - новинка года! Минус 10 лет за 5 минут')
-            a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
         .clear
-        .map-11
-            .map-right
-                img(src='/bitrix/templates/fiore_main/img/map-right.png', alt='')
-            .bx-yandex-view-layout(style='height:350px; overflow: hidden; background: green;')
-        .map-title
-            h1 Наш салон
-            h2.ordynka Ордынка
-        .clear
-        .news
-            h2 Акции
-            #bx_1392716086_1642.n1
-                a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
-                span 23.10.2017
-            #bx_1392716086_1634.n1
-                a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
-                span 17.09.2017
-            #bx_1392716086_1616.n1
-                a(href='/sale/2017/fiore-na-lady-mail-ru/') Fiore на lady.mail.ru
-                span 30.04.2017
-    .clear
+    
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-6.l-col--xs-flex
+                    .ui-haircuts
+                        .ui-haircuts__title.ui-heading.ui-heading--lvl2.ui-heading--default Стрижки
+                        .ui-haircuts__description Профессионалы салона красоты Fiore помогут сделать вашу прическу безупречной в соответствии с вашими пожеланиями, будь то романтичная прическа для выпускного бала.
+                        .ui-haircuts__price от 3000
+                        .ui-haircuts__button 
+                            a.button-large.fancybox(href='#modal-online', onclick='javascript:modal();return false;') ЗАПИСЬ ОНЛАЙН
+                .l-col.l-col--xs-3.l-col--xs-flex
+                    .ui-main-shares-box
+                        .ui-main-shares-box__img(style="background-image: url('http://salonfiore.ru/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg')")
+                        .ui-main-shares-box__title 
+                            a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+                .l-col.l-col--xs-3.l-col--xs-flex
+                    .ui-main-shares-box
+                        .ui-main-shares-box__img(style="background-image: url('http://salonfiore.ru/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg')")
+                        .ui-main-shares-box__title 
+                            a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
+            .l-row
+                .l-col.l-col--xs-12
+                    .ui-map
+                        .ui-map__layout
+                        .ui-map__heading
+                            .ui-heading.ui-heading--lvl2.ui-heading--default Наш салон
+                            span.ui-heading.ui-heading--lvl2.ui-heading--pink Ордынка
+            .l-row
+                .l-col.l-col--xs-12
+                    .ui-heading.ui-heading--lvl2.ui-heading--pink Акции
+            .l-row
+                .l-col.l-col--xs-4
+                    .ui-main-shares-cart
+                        .ui-main-shares-cart__title
+                            a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+                        .ui-main-shares-cart__date 23.10.2017
+                .l-col.l-col--xs-4
+                    .ui-main-shares-cart
+                        .ui-main-shares-cart__title
+                            a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
+                        .ui-main-shares-cart__date 17.09.2017
+                .l-col.l-col--xs-4
+                    .ui-main-shares-cart
+                        .ui-main-shares-cart__title
+                            a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+                        .ui-main-shares-cart__date 30.04.2017
