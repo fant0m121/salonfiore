@@ -10,27 +10,27 @@ block content
             .slider.slider3
                 .sliderContent
                     #bx_1454625752_670.item
-                        img(src='/upload/iblock/d9a/d9a1fffaedc03b95a60a500778d697f2.png')
+                        img(src='http://salonfiore.ru/upload/iblock/d9a/d9a1fffaedc03b95a60a500778d697f2.png')
                         .rating-info
                             h2 КОСМЕТОЛОГИЯ
                             span от 3000 руб.
                     #bx_1454625752_687.item
-                        img(src='/upload/iblock/4c7/4c76a255ccda7b70c9a9155b012acdd5.png')
+                        img(src='http://salonfiore.ru/upload/iblock/4c7/4c76a255ccda7b70c9a9155b012acdd5.png')
                         .rating-info
                             h2 СТРИЖКА
                             span от 3000 руб.
                     #bx_1454625752_661.item
-                        img(src='/upload/iblock/625/625dfc354d10fc59c610e949e9ab42a5.png')
+                        img(src='http://salonfiore.ru/upload/iblock/625/625dfc354d10fc59c610e949e9ab42a5.png')
                         .rating-info
                             h2 УКЛАДКА
                             span от 1500 руб.
                     #bx_1454625752_102.item
-                        img(src='/upload/iblock/371/371ee2ffc11fe92bc5d9a9e3eb45c107.png')
+                        img(src='http://salonfiore.ru/upload/iblock/371/371ee2ffc11fe92bc5d9a9e3eb45c107.png')
                         .rating-info
                             h2 ОКРАШИВАНИЕ
                             span от 4000 руб.
                     #bx_1454625752_101.item
-                        img(src='/upload/iblock/538/538265ca7ac308d0746e72909622f8ce.png')
+                        img(src='http://salonfiore.ru/upload/iblock/538/538265ca7ac308d0746e72909622f8ce.png')
                         .rating-info
                             h2 МАНИКЮР
                             span от 1100 руб.
@@ -38,16 +38,16 @@ block content
                     .bx_catalog_text
                         ul.bx_catalog_text_ul
                             li#bx_1623270341_17
-                                a(href='/hair/', onmouseover="$(this).toggleClass('active',true);showSection(this,17);") Волосы
+                                a(href='/hair/', onmouseover="jQuery(this).toggleClass('active',true);showSection(this,17);") Волосы
                             li#bx_1623270341_18.color1
-                                a(href='/face/', onmouseover="$(this).toggleClass('active',true);showSection(this,18);") Лицо
+                                a(href='/face/', onmouseover="jQuery(this).toggleClass('active',true);showSection(this,18);") Лицо
                             li#bx_1623270341_19.color2
-                                a(href='/body/', onmouseover="$(this).toggleClass('active',true);showSection(this,19);") Тело
+                                a(href='/body/', onmouseover="jQuery(this).toggleClass('active',true);showSection(this,19);") Тело
                             li#bx_1623270341_20.color3
-                                a(href='/hand/', onmouseover="$(this).toggleClass('active',true);showSection(this,20);") Руки + Ноги
+                                a(href='/hand/', onmouseover="jQuery(this).toggleClass('active',true);showSection(this,20);") Руки + Ноги
                         div(style='clear: both;')
             .clear
-            #sg-section-17.choose(style='display:none')
+            #sg-section-17.choose
                 p
                     a(href='/hair/prays-list-volosy/') Прайс лист ВОЛОСЫ
                     a(href='/hair/strizhka/') Стрижка
@@ -188,30 +188,30 @@ block content
                 .clear
             script.
                 function showSection(obj,id){
-                $('div.choose').toggle(false);
-                $('.sg_item ul li a').removeClass('active');
-                $('#sg-section-'+id).toggle(true);
-                $(obj).addClass('active');
+                jQuery('div.choose').toggle(false);
+                jQuery('.sg_item ul li a').removeClass('active');
+                jQuery('#sg-section-'+id).toggle(true);
+                jQuery(obj).addClass('active');
                 }
-                $(document).ready(function() {
-                $('div.choose:first').toggle(true);
-                $('.sg_item ul li a:first').addClass('active');
+                jQuery(document).ready(function() {
+                jQuery('div.choose:first').toggle(true);
+                jQuery('.sg_item ul li a:first').addClass('active');
                 });
         .clear
     .content
         script(type='text/javascript').
-            $(document).ready(function(){
-            $('.michur').on('click',function(){
-            $('.map-21').hide();$('.map-11').show();
-            $(this).replaceWith("<h3 class='michur'>Ордынка</h3>");
-            $('.ordynka').replaceWith("<h2 class='ordynka'>Мичуринский</h2>");
+            jQuery(document).ready(function(){
+            jQuery('.michur').on('click',function(){
+            jQuery('.map-21').hide();jQuery('.map-11').show();
+            jQuery(this).replaceWith("<h3 class='michur'>Ордынка</h3>");
+            jQuery('.ordynka').replaceWith("<h2 class='ordynka'>Мичуринский</h2>");
             });
-            $('.ordynka').on('click',function(){
-            $('.map-11').hide();$('.map-21').show();
-            $('.michur').replaceWith("<h2 class='michur'>Ордынка</h2>");
-            $(this).replaceWith("<h3 class='ordynka'>Мичуринский</h3>");
+            jQuery('.ordynka').on('click',function(){
+            jQuery('.map-11').hide();jQuery('.map-21').show();
+            jQuery('.michur').replaceWith("<h2 class='michur'>Ордынка</h2>");
+            jQuery(this).replaceWith("<h3 class='ordynka'>Мичуринский</h3>");
             });
-            setTimeout(function(){$('.map-21').hide()}, 500);
+            setTimeout(function(){jQuery('.map-21').hide()}, 500);
             });
         .online
             h1 Стрижки
@@ -221,18 +221,17 @@ block content
             a.button-large.fancybox(href='#modal-online', onclick='javascript:modal();return false;') ЗАПИСЬ ОНЛАЙН
         #bx_3017195560_1642.a2
             span
-                img(src='/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg', width='240', height='169', alt='Halloween Party 26-27-28 октября!', title='Halloween Party 26-27-28 октября!')
+                img(src='http://salonfiore.ru/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg', width='240', height='169', alt='Halloween Party 26-27-28 октября!', title='Halloween Party 26-27-28 октября!')
             a(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
         #bx_3017195560_1634.a2
             span
-                img(src='/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg', width='240', height='120', alt='Coolifting - новинка года! Минус 10 лет за 5 минут', title='Coolifting - новинка года! Минус 10 лет за 5 минут')
+                img(src='http://salonfiore.ru/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg', width='240', height='120', alt='Coolifting - новинка года! Минус 10 лет за 5 минут', title='Coolifting - новинка года! Минус 10 лет за 5 минут')
             a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
         .clear
         .map-11
             .map-right
                 img(src='/bitrix/templates/fiore_main/img/map-right.png', alt='')
-            .bx-yandex-view-layout(style='height:350px; overflow:hidden;')
-                .bx-yandex-view-map(style='margin:0px 0px 0px -100px;')
+            .bx-yandex-view-layout(style='height:350px; overflow: hidden; background: green;')
         .map-title
             h1 Наш салон
             h2.ordynka Ордынка
