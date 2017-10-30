@@ -28,6 +28,46 @@
     background-color #dddfdd
     background-size 100%
 
+.ui-header
+    background rgba(40,55,76,0.9)
+    position relative
+    z-index 2
+
+    &__phone
+        background #00bcf4
+        display flex
+        align-items center
+        height 100%
+        padding 0 7px
+
+        a
+            color #3a4559
+            font-weight bold
+
+        a + a
+            padding-left 10px
+
+.ui-header-menu
+    display flex
+    margin 0
+    padding 0
+
+    &__item
+        padding 6px 0
+        list-style none
+        & + &
+            margin-left 34px
+
+    &__link
+        font 16px 'PF DinText Pro'
+        color #fff
+        text-transform uppercase
+        &:hover
+            color #e10084
+
+        &--active
+            color #e10084
+
 .ui-footer
     background url(/images/footer-bg.png) repeat-x top center
     padding-bottom 20px

@@ -19,37 +19,32 @@ head
         link(rel='stylesheet', href= baseUrl + 'styles/style.css')
 
 body.ui-page
-    .h1
-        .content
-            ul#top-menu.menu
-                li
-                    a(href='/about/') О нас
-                li(data-bg-color='')
-                    a(href='/services/') Услуги
-                li
-                    a(href='/catalog/') Магазин
-                li
-                    a(href='/sale/') АКЦИИ
-                li
-                    a(href='/press/') ПРЕССА
-                li
-                    a(href='/reviews/') ОТЗЫВЫ
-                li
-                    a(href='/contacts/') Контакты
-            div(style='/* width: 268px; */float: left;height: 100%;padding: 6px 0 6px 6px;background-color: #00bcf4;color: #3a4559 !important;font-weight: bold;')
-                div(style='white-space: nowrap; display: inline-block; float: left; width: 134px;')
-                    a.ya-phone(style='color: #3a4559 !important;', href='tel:+74959539815', onclick="ga('send', 'event', 'tel', 'click');yaCounter37721308.reachGoal('tel');") +7 (495) 953-98-15
-                div(style='white-space: nowrap; display: inline-block; float: left;')
-                    a.ya-phone(style='color: #3a4559 !important;', href='intent://send/+79654303273#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end') What's up: +7 (965) 430-32-73
-            .share-top
-                style(type='text/css').
-                    .f1-icon {height: 30px;}
-                    .f1-icon span{width:auto;}
-                script(type='text/javascript', src='//yandex.st/share/share.js', charset='utf-8')
-                .yashare-auto-init(data-yasharel10n='ru', data-yasharequickservices='vkontakte,facebook,twitter', data-yasharetheme='counter')
-                a.share-a(href='http://instagram.com/SALONFIORE')
-                    img(src='/images/instagram.png', alt='instaram')
-        .clear
+    
+        
+    .ui-header
+        .l-grid.l-grid--container
+            .l-row.l-row--xs-space-between
+                .l-col.l-col--xs-7.l-col--md-auto
+                    .ui-header__menu
+                        ul.ui-header-menu
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/about/') О нас
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/services/') Услуги
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/catalog/') Магазин
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/sale/') АКЦИИ
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/press/') ПРЕССА
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/reviews/') ОТЗЫВЫ
+                            li.ui-header-menu__item
+                                a.ui-header-menu__link(href='/contacts/') Контакты
+                .l-col.l-col--xs-5.l-col--md-auto
+                    .ui-header__phone 
+                        a.ui-header-phone(href='tel:+74959539815', onclick="ga('send', 'event', 'tel', 'click');yaCounter37721308.reachGoal('tel');") +7 (495) 953-98-15
+                        a.ui-header-phone(href='intent://send/+79654303273#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end') What's up: +7 (965) 430-32-73
 
     block content
 
