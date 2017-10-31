@@ -5,80 +5,71 @@ block config
   - var baseUrl = '../'
 
 block content
-    .h5
-      .content
-        .h5-online
-          a.button-fancybox(href='#modal-online', onclick="javascript:modal();ga('send', 'event', 'booking_click', 'click');yaCounter37721308.reachGoal('booking_click');") ЗАПИСЬ ОНЛАЙН
-          .news-list
-            p#bx_565502798_1642.news-item
-              a.banner(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
-          .clear
-        .h5-left
-          ul.left-menu-services
-            li
-              a(href='/hair/') Волосы
-            li
-              a(href='/face/') Лицо
-            li
-              a.active(href='javascript:void(0)') Тело
-            li
-              a(href='/hand/') Руки + Ноги
-        .h5-right
-          ul.breadcrumb-navigation
-            li
-              a(href='/', title='Салон Fiore') Салон Fiore
-            li
-              span  - 
-            li Тело
-          .sg_section_info
-            h1 Тело
-            p
-          #bx_3017195560_1506.h5-info1
-            span
-            span.span-name
-              a(href='/body/bandazhnye-obertyvaniya/') Бандажные обертывания
-          #bx_3017195560_1505.h5-info2
-            span
-            span.span-name
-              a(href='/body/vodoroslevye-obertyvaniya/') Водорослевые обертывания
-          #bx_3017195560_129.h5-info2
-            span
-              img(src='http://salonfiore.ru/upload/iblock/58b/58be99af803b3a890746435c5e3da477.jpg', alt='')
-            span.span-name
-              a(href='/body/voskovaya-epilyatsiya-epilyatsiya-voskom/') Восковая эпиляция (эпиляция воском)
-          #bx_3017195560_1583.h5-info1
-            span
-            span.span-name
-              a(href='/body/lazernaya-epilyatsiya/') Лазерная эпиляция
-          #bx_3017195560_130.h5-info2
-            span
-              img(src='http://salonfiore.ru/upload/iblock/79b/79bbcbbf66ecfa86e6b5f26f86a3403d.jpg', alt='')
-            span.span-name
-              a(href='/body/epilyatsiya-bikini/') Эпиляция бикини
-          #bx_3017195560_1452.h5-info2
-            span
-            span.span-name
-              a(href='/body/epilyatsiya-muzhchin/') Эпиляция для мужчин
-          #bx_3017195560_1555.h5-info2
-            span
-            span.span-name
-              a(href='/body/epilyatsiya-nog/') Эпиляция ног
-          #bx_3017195560_1556.h5-info1
-            span
-            span.span-name
-              a(href='/body/epilyatsiya-ruk/') Эпиляция рук
-          ul
-            li
-              a(href='')
-          .clear
-          .h5-info1.sg_add_services(style='width: 100% !important; min-height: 340px;')
-            div
-              h2 Еще услуги
-              ul
-                li#bx_3017195560_753
-                  a(href='/body/prays-list-telo/') Прайс лист Тело
-          br
-          .clear
-        .clear
-      br
-      .clear
+    .l-grid.l-grid--container
+        .l-row
+            .l-col.l-col--xs-4.l-col--md-offset-2.ui-services-banner
+                a.ui-services-banner__link(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        .l-row
+            .l-col.l-col--xs-2
+                ul.ui-left-menu
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/hair/') Волосы
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/face/') Лицо
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='javascript:void(0)') Тело
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/hand/') Руки + Ноги
+            .l-col.l-col--xs-10
+                .l-grid.l-grid--container
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-page-header
+                                 a.ui-page-header__link(href='/', title='Салон Fiore') Салон Fiore
+                                 span &nbsp; - Тело
+                     .l-row
+                         .l-col.l-col--xs-12
+                             .ui-heading.ui-heading--lvl2.ui-heading--default Тело
+                    .l-row
+                        .l-col.l-col--xs-8.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/bandazhnye-obertyvaniya/') Бандажные обертывания
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/vodoroslevye-obertyvaniya/') Водорослевые обертывания
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-services-cart(style="background-image: url('http://salonfiore.ru/upload/iblock/58b/58be99af803b3a890746435c5e3da477.jpg')")
+                                .ui-services-cart__title 
+                                    a(href='/body/voskovaya-epilyatsiya-epilyatsiya-voskom/') Восковая эпиляция (эпиляция воском)
+                        .l-col.l-col--xs-8.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/lazernaya-epilyatsiya/') Лазерная эпиляция
+                        .l-col.l-col--xs-8.l-col--xs-flex
+                            .ui-services-cart(style="background-image: url('http://salonfiore.ru/upload/iblock/79b/79bbcbbf66ecfa86e6b5f26f86a3403d.jpg')")
+                                .ui-services-cart__title 
+                                    a(href='/body/epilyatsiya-bikini/') Эпиляция бикини
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/epilyatsiya-muzhchin/') Эпиляция для мужчин
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/epilyatsiya-nog/') Эпиляция ног
+                        .l-col.l-col--xs-8.l-col--xs-flex
+                            .ui-services-cart
+                                .ui-services-cart__title 
+                                    a(href='/body/epilyatsiya-ruk/') Эпиляция рук
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-othersservices-cart
+                                .ui-othersservices-cart__title Еще услуги
+                                .l-grid.l-grid--container
+                                    .l-row
+                                        .l-col--xs-12.l-col--md-6
+                                            a.ui-othersservices-cart__link(href='/body/prays-list-telo/') Прайс лист Тело
+                                        .l-col--xs-12.l-col--md-6
+                                            a.ui-othersservices-cart__link(href='/body/prays-list-telo/') Прайс лист Тело

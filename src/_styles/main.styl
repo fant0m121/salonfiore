@@ -62,10 +62,45 @@
         font 16px 'PF DinText Pro'
         color #fff
         text-transform uppercase
+
         &:hover
             color #e10084
 
         &--active
+            color #e10084
+
+.ui-left-menu
+    margin 0
+    padding 0
+
+    &__item
+        padding 6px 0
+        list-style none
+
+    &__link
+        font 18px 'PF DinText Pro'
+        color #1d2e43
+        text-transform uppercase
+        text-decoration underline
+
+        &:hover
+            color #e10084
+
+        &--active
+            color #e10084
+
+.ui-page-header
+    padding-bottom 20px
+
+    span
+        color #1d2e43
+
+    &__link
+        font 16px 'PF DinText Pro'
+        text-decoration underline
+        color #1d2e43
+
+        &:hover
             color #e10084
 
 .ui-footer
@@ -262,5 +297,61 @@
             font 18px 'PF DinText Pro'
             color #1d2e43
 
+.ui-services-banner
+    border 3px solid #00bcf4
+    padding 26px 20px
+    margin 15px 0
+
+    &__link
+        font 18px 'PF DinText Pro'
+        color #1d2e43
+        text-decoration underline
+        text-transform uppercase
+
+.ui-services-cart
+    background #bfb5b5
+    background-size cover
+    background-position 100% 100%
+    background-repeat no-repeat
+    position relative
+    padding-bottom 56%
+    flex 1
+    margin 10px 0
+
+    &__title
+        padding 5px 15px
+        background #fff
+        position absolute
+        bottom 30px
+
+        a
+            font 18px 'PF DinText Pro'
+            text-transform uppercase
+            text-decoration underline
+            color #1d2e43
+
+            &:hover
+                color #e10084
+
+.ui-othersservices-cart
+    padding 25px
+    margin 10px 0 20px
+    background #fff
+
+    &__title
+        font 500 20px 'PF DinText Pro'
+        text-transform uppercase
+        color #000
+        padding-bottom 20px
+
+    &__link
+        font 18px 'PF DinText Pro'
+        text-transform uppercase
+        text-decoration underline
+        color #1d2e43
+        padding 6px 0
+
+        &:hover
+            color #e10084
 
 @import './style'
