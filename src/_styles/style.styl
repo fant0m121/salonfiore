@@ -2551,9 +2551,7 @@ input,textarea,button
 html
     margin 0
     padding 0
-    height 100%
     width 100%
-    overflow-y auto
 
 body
     background #fff
@@ -3116,6 +3114,7 @@ ul
     float left
     margin 8px
     border 1px solid #dddfdd
+    position relative
     span
         max-width 500px
         max-height 246px
@@ -4932,3 +4931,63 @@ ul.ul-photos-thumbs li.active a
         position absolute
         right -25px
         top 5px
+
+ul
+    &.breadcrumb-navigation
+        padding 0
+        margin 0
+        padding-top 4px
+        list-style none
+        li
+            display inline
+        a
+            font 16px PFDinTextPro-Regular
+            text-decoration underline
+            color #1d2e43
+            &:visited
+                color #1d2e43
+        span
+            font 16px PFDinTextPro-Regular
+
+ul.breadcrumb-navigation a:active,ul.breadcrumb-navigation a:hover
+    color #e10084
+
+.sg_add_services
+    background #fff
+    min-height 236px
+    & > div
+        padding 25px 25px 0 25px
+    h1
+        margin-bottom 15px
+    ul
+        width 49%
+        float left
+    a
+        font 18px PFDinTextPro-Regular
+        color #1d2e43
+        text-decoration underline
+        text-transform uppercase
+
+.h5-info1.sale_in_secrives .span-name a,.h5-info2.sale_in_secrives .span-name a,.h5-info1.sale_in_secrives .span-name,.h5-info2.sale_in_secrives .span-name
+    color #e10084
+
+.h5-info1 .span-name,.h5-info2 .span-name
+    position absolute
+    left 0px
+    bottom 28px
+    color #1D2E43
+    font 18px "PFDinTextPro-Regular"
+    text-decoration underline
+    text-transform uppercase
+    width auto
+    padding 5px 15px 0px 0
+    text-align left
+
+.sg_section_info
+    margin-top 30px
+    h1
+        color #1d2e43
+        font 60px "FiveMinutes"
+        text-transform uppercase
+    p
+        margin-top 25px
