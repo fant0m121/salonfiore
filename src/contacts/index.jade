@@ -5,16 +5,17 @@ block config
   - var baseUrl = '../'
 
 block content
-    .bx-yandex-view-layout(style='height:500px;overflow:hidden;background: green;')
-    .h5
-        .content
-            h1 Салон Fiore на Ордынке
-            p Большая Ордынка д. 13/9, 2-й этаж
-            p (м. Третьяковская / м. Новокузнецкая)
-            h2 График работы
-            p Пн–Сб: 10:00–22:00, Вс: 10:00–20:00
-            h2 Телефон
-            p
-                span.ya-phone 8 (495) 953-98-15, 8 (495) 953-99-18
-            a(href='#') info@salonfiore.com
-        .clear
+    .ui-map.ui-map--lg
+        .ui-map__layout
+    .l-grid.l-grid--container
+        .l-row
+            .l-col.l-col--xs-12
+                .ui-contact
+                    .ui-contact__header Салон Fiore на Ордынке
+                    .ui-text Большая Ордынка д. 13/9, 2-й этаж
+                    .ui-text (м. Третьяковская / м. Новокузнецкая)
+                    .ui-text__title График работы
+                    .ui-text Пн–Сб: 10:00–22:00, Вс: 10:00–20:00
+                    .ui-text__title Телефон
+                    .ui-text 8 (495) 953-98-15, 8 (495) 953-99-18
+                    a.ui-link(href="#") info@salonfiore.com
