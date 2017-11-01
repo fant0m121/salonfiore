@@ -1,0 +1,515 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    .content
+      .h5-online
+        .news-list
+          p#bx_1454625752_1642.news-item
+            a.banner(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        .clear
+      .h5-left
+        style.
+          .h5-left ul li a.active {color: #E10084;}
+        span.h1 Акции
+        ul.left-menu-services
+          li
+            a(href='/sale/2009/') 2009
+          li
+            a(href='/sale/2010/') 2010
+          li
+            a(href='/sale/2011/') 2011
+          li
+            a(href='/sale/2012/') 2012
+          li
+            a(href='/sale/2013/') 2013
+          li
+            a(href='/sale/2014/') 2014
+          li
+            a(href='/sale/2015/') 2015
+          li
+            a(href='/sale/2016/') 2016
+          li
+            a(href='/sale/2017/') 2017
+      .h5-right
+        style(type='text/css').
+          .photos-column{
+          position: relative;
+          width: 240px;
+          float: left;
+          margin-right: 15px;
+          }
+          .photos-column.column-2{
+          margin: 0px;
+          }
+        #itemBlockHandler
+          // <section id="photos">
+          h1
+          .photos-column.column-0
+            #bx_3017195560_1642.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/c8a/c8a528a955ce2ae727762700823c5a90.jpg', alt='')
+              a(href='/sale/detail/') Halloween Party 26-27-28 октября!
+              p 23 Октября 2017
+            #bx_3017195560_1615.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/729/7291d4a956a624796fa5a9a597f54b9b.jpg', alt='')
+              a(href='/sale/detail/') Органическая косметика O’right - новинка
+              p 30 Апреля 2017
+            #bx_3017195560_1588.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/518/518e8785c4ab84a99cb03e7cea7253c4.jpg', alt='')
+              a(href='/sale/detail/') 30% off в апреле на лазерную эпиляцию от 2-х зон
+              p 1 Января 2017
+            #bx_3017195560_1567.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/b15/b1579615a93b5374863f4506b15ca04f.jpg', alt='')
+              a(href='/sale/detail/') Pre Halloween Party 28-29-30 октября
+              p 13 Октября 2016
+            #bx_3017195560_1543.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/e80/e80cc4a95e3bfd63dcb28b7e3cbcb2f1.jpg', alt='')
+              a(href='/sale/2016/skidka-na-organic-color-system/') Попробуйте Organic Color System – дарим скидку на первую процедуру
+              p 1 Августа 2016
+            #bx_3017195560_1507.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/3ee/3ee635d9a7d33d56e435a1b670a463ba.jpg', alt='')
+              a(href='/sale/2016/sferangs-ukhod-s-ulitkoy/') Внимание! Косметика Sferangs – серия уход с улиткой
+              p 6 Февраля 2016
+            #bx_3017195560_1417.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/33a/33a659da5f6e86897b795fc7d1c04ab8.jpg', alt='')
+              a(href='/sale/2015/novinki-v-oblasti-uslug-detox-mint/') Новинки в области услуг Detox Mint
+              p 1 Сентября 2015
+            #bx_3017195560_1382.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/5be/5bef3936494c5e4cfb34dd5b938b161e.jpg', alt='')
+              a(href='/sale/2014/innovatsionnoe-pokrytie-luxio/') Инновационное покрытие LUXIO
+              p 20 Октября 2014
+            #bx_3017195560_205.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/61d/61d8ded76e1639feebc3f21f8c86599f.jpg', alt='')
+              a(href='/sale/2013/ne-perestaem-radovat-novinkami/') Осенние оттенки Christina Fitzgerald 2013
+              p 16 Октября 2013
+            #bx_3017195560_208.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/348/348755c60aed7d414be6604269e550d0.jpg', alt='')
+              a(href='/sale/2013/vesenniy-must-have-kosmetika-metatron/') Весенний must-have: косметика METATRON.
+              p 12 Мая 2013
+            #bx_3017195560_211.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/f5e/f5eeef3a5255a352cfc78cd62e707f24.jpg', alt='')
+              a(href='/sale/2012/novinka-kosmetika-christina-fitzgerald-v-salone-fiore/') Новинка!!! Косметика Christina Fitzgerald в салоне Fiore
+              p 27 Ноября 2012
+            #bx_3017195560_214.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/698/698fcf431bdde23028ca597ddf913aa5.jpg', alt='')
+              a(href='/sale/2012/mezoterapiya-v-salone-fiore-vse-dlya-krasoty/') Мезотерапия в салоне Fiore: все для красоты
+              p 17 Сентября 2012
+            #bx_3017195560_217.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/5bf/5bfdac4c98a899bbde8c549105b096b4.jpg', alt='')
+              a(href='/sale/2012/fiore-porazhaet-i-raduet-dialayt-i-diarishes-ot-l-oreal/') Fiore поражает и радует: Диалайт и Диаришес от L’Oreal
+              p 23 Февраля 2012
+            #bx_3017195560_221.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/95f/95f12a175a9b78187060321925ecb69e.png', alt='')
+              a(href='/sale/2011/novye-osenne-zimnie-ottenki-shellac/') Новые оттенки SHELLAC 'осень-зима
+              p 10 Октября 2011
+            #bx_3017195560_225.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/495/4959065ed61ed5698518972836cef6ca.jpg', alt='')
+              a(href='/sale/2011/legendarnyy-vosk-lycon-v-salone-krasoty-fiore/') Легендарный воск LYCON в салоне красоты Fiore
+              p 23 Июня 2011
+            #bx_3017195560_228.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/c3b/c3b30fa8ed3f0568e26994f3abf183ad.jpg', alt='')
+              a(href='/sale/2011/3d-lashes-pyshnye-resnitsy-i-vyrazitelnyy-vzglyad/') 3D-LASHES — пышные ресницы и выразительный взгляд
+              p 16 Мая 2011
+            #bx_3017195560_230.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/ca5/ca503ce24e3e1aff6d7e9a9f2b75410a.jpg', alt='')
+              a(href='/sale/2011/kms-california-iskusstvo-samovyrazheniya/') KMS California — Искусство самовыражения!
+              p 1 Мая 2011
+            #bx_3017195560_234.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/83e/83ec5a9b604980b0bc94b6990509d146.jpg', alt='')
+              a(href='/sale/2010/shellac-snova-s-nami/') SHELLAC снова с нами!
+              p 16 Ноября 2010
+            #bx_3017195560_236.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/d37/d377e5811ad9668a589ff0690d0dd709.jpg', alt='')
+              a(href='/sale/2010/jet-peel-apparat-dlya-gazozhidkostnoy-obrabotki-kozhi/') Jet Peel — аппарат для газожидкостной обработки кожи
+              p 29 Сентября 2010
+            #bx_3017195560_240.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/76c/76cda098de74bc8d26baf50ddd7c83f2.jpg', alt='')
+              a(href='/sale/2010/fitolaminirovanie-luquias-osushchestvlenie-mechty/') Фитоламинирование Luquias — осуществление мечты
+              p 12 Августа 2010
+            #bx_3017195560_243.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/01e/01ea59f6b88c49eb864f8b6a51b8eda9.jpg', alt='')
+              a(href='/sale/2010/liniya-kosmetiki-sothys-bozhestvennyy-ukhod-v-fiore/') Линия косметики SOTHYS: божественный уход в Fiore
+              p 10 Июня 2010
+            #bx_3017195560_246.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/d9b/d9ba3cb6b3dfa3bf0757c4a171e91822.jpg', alt='')
+              a(href='/sale/2010/chudo-preobrazheniya-v-kresle-parikmakhera/') Тайна преображения в салоне красоты
+              p 17 Апреля 2010
+            #bx_3017195560_250.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/9fd/9fd2b15ea5d15cbf617fdf36926be178.jpg', alt='')
+              a(href='/sale/2010/eksklyuzivnye-uslugi-dlya-muzhchin-usluga-cover-5/') Эксклюзивные услуги для мужчин — Услуга COVER 5
+              p 16 Марта 2010
+            #bx_3017195560_252.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/ffa/ffa71e2ede32bb34711e50e6b1de78f7.png', alt='')
+              a(href='/sale/2010/trendy-2010/') Тренды причесок 2010
+              p 2 Февраля 2010
+            #bx_3017195560_255.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/580/580e7ace8aa2eb8f1dfd547db44ac5b3.jpg', alt='')
+              a(href='/sale/2009/novye-tekhniki-strizhek-i-ukladok-ot-vedushchikh-stilistov-ssha/') Новые техники стрижек и укладок от ведущих стилистов США
+              p 3 Ноября 2009
+            #bx_3017195560_1473.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/c23/c23cee97a7fa795752dbf3e8dffa749d.png', alt='')
+              a(href='/sale/2016/bx-wrinkle/') Корректор BX Wrinkle – Botox-эффект без инъекций
+              p
+          .photos-column.column-1
+            #bx_3017195560_1634.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/733/733a723a1690d131468f00da50edd447.jpg', alt='')
+              a(href='/sale/2017/coolifting/') Coolifting - новинка года! Минус 10 лет за 5 минут
+              p 17 Сентября 2017
+            #bx_3017195560_1614.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/d05/d0541d511a093b2123ee414d700db4a9.png', alt='')
+              a(href='/sale/2017/khurma-karambola/') Сезонная программа Sothys «Хурма Карамбола»
+              p 23 Апреля 2017
+            #bx_3017195560_1569.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/9fb/9fb3d7356e8601efb6d24b5a82b1ed5c.jpg', alt='')
+              a(href='/sale/2016/secrets-de-sothys-creme128/') Secrets De Sothys® La Crème 128 – хит осени-2016
+              p 19 Октября 2016
+            #bx_3017195560_1565.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/cde/cded94ebcf0d82425622511936455103.jpg', alt='')
+              a(href='/sale/2016/6-7-october-den-krasoty/') 6 и 7 октября День красоты!
+              p 28 Сентября 2016
+            #bx_3017195560_1545.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/928/928177000e68cb52cb3cfabb0b512188.jpg', alt='')
+              a(href='/sale/2016/miofastsialnyy-massazh-litsa/') Миофасциальный массаж лица
+              p 29 Июля 2016
+            #bx_3017195560_1419.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/f81/f813539098cb759fb48791e6273463f0.jpg', alt='')
+              a(href='/sale/2015/layfer-novinka-sredi-krasiteley/') Лайфер: Новинка среди красителей
+              p 1 Сентября 2015
+            #bx_3017195560_1416.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/6ee/6ee5b69a2c268fa59f783338bc3055e6.png', alt='')
+              a(href='/sale/2015/khit-leta-olaplex/') Хит лета – OLAPLEX
+              p 1 Сентября 2015
+            #bx_3017195560_1509.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/274/2748ec1172d18a20d28724e30deebeb1.jpg', alt='')
+              a(href='/sale/2014/sale-2/') Подарочные сертификаты
+              p 5 Августа 2014
+            #bx_3017195560_206.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/1e9/1e94015f86837bb56081f5eac6fb36ed.jpg', alt='')
+              a(href='/sale/2013/novinki-v-salonakh-krasoty-fiore/') Shellac Intimates Collection - 4 новых оттенка Shellac
+              p 15 Октября 2013
+            #bx_3017195560_209.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/1f5/1f54d7722a89a940c942174bc9719c70.jpg', alt='')
+              a(href='/sale/2013/mc-body-v2-vernut-krasotu-stalo-eshche-proshche/') MC BODY В2 — вернуть красоту стало еще проще!
+              p 15 Марта 2013
+            #bx_3017195560_212.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/4c1/4c17cd160fde7dfb1fb90325737729a6.jpg', alt='')
+              a(href='/sale/2012/calonu-na-michurinskom-3-goda/') Cалону на Мичуринском 3 года!
+              p 19 Ноября 2012
+            #bx_3017195560_216.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/e8d/e8ded60e7a98247f2b98b91930dbf9b1.jpg', alt='')
+              a(href='/sale/2012/novinka-v-salonakh-krasoty-fiore-modelirovanie-volos-plia/') НОВИНКА в салонах красоты FIORE! Моделирование волос PLIA!
+              p 24 Июля 2012
+            #bx_3017195560_219.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/f0a/f0ab0965d2269b9703a139837ae702ee.jpg', alt='')
+              a(href='/sale/2011/gulyaeva-natalya-luchshiy-stilist-moskvy/') Гуляева Наталья — Лучший стилист Москвы!
+              p 21 Ноября 2011
+            #bx_3017195560_223.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/e53/e53eb4eecc446436770310b4e7c79aa4.jpg', alt='')
+              a(href='/sale/2011/intensivnaya-kompleksnaya-programma-siyanie-i-molodost-kozhi-2/') Интенсивная комплексная программа «Сияние и молодость кожи»
+              p 15 Сентября 2011
+            #bx_3017195560_226.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/490/490c7cbae0593a79ec876688277a8f74.jpg', alt='')
+              a(href='/sale/2011/solperfection-solnechnaya-liniya-ot-kms-california/') SOLPERFECTION — солнечная линия от KMS California
+              p 5 Июня 2011
+            #bx_3017195560_229.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/e46/e46a96e33291e66a8177b8e22c9c2ff1.jpg', alt='')
+              a(href='/sale/2011/s-dnem-pobedy-/') С ДНЕМ ПОБЕДЫ!!!
+              p 9 Мая 2011
+            #bx_3017195560_232.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/32c/32c72cd94e386d97cdd794cb41b00891.jpg', alt='')
+              a(href='/sale/2011/my-otkrylis-i-zhdem-vas/') МЫ ОТКРЫЛИСЬ И ЖДЕМ ВАС!
+              p 25 Января 2011
+            #bx_3017195560_235.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/822/822bc49a52f56b763a9489acec13c721.jpg', alt='')
+              a(href='/sale/2010/idealnye-nogotki-sezona-2011-2012/') Идеальные ноготки сезона 2011/2012
+              p 2 Ноября 2010
+            #bx_3017195560_238.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/22d/22d12ead51cfa41e224981467d20f981.jpg', alt='')
+              a(href='/sale/2010/intensivnaya-omolazhivayushchaya-programma-collagene-hyaluronique-intensive-treatment/') Омолаживающая программа от Sothys Collagene Hyaluronique Intensive Treatment
+              p 14 Сентября 2010
+            #bx_3017195560_241.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/a9b/a9bbc619090dd7053340bf1af8334fdb.jpg', alt='')
+              a(href='/sale/2010/revolyutsiya-v-pokrytii-i-ukreplenii-nogtey-shellak/') Покрытие и укрепление ногтей Шеллак - революция в нейл-дизайне
+              p 3 Августа 2010
+            #bx_3017195560_244.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/08d/08d161955f4a31308033615c256fffb1.jpg', alt='')
+              a(href='/sale/2010/inoa-innovatsiya-v-okrashivanii-volos/') INOA — инновация в окрашивании волос!
+              p 27 Мая 2010
+            #bx_3017195560_247.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/90d/90deadc925025d938c50cc172a886eb1.jpg', alt='')
+              a(href='/sale/2010/keratinovoe-vypryamlenie-volos-keratin-complex-smoothing-therapy/') Кератиновое выпрямление волос: Keratin Complex smoothing therapy
+              p 16 Апреля 2010
+            #bx_3017195560_249.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/c60/c602eb1ce328a89f3369aa37f0c76e7d.jpg', alt='')
+              a(href='/sale/2010/energeticheskiy-massazh-energic-dlya-muzhchin/') Энергетический массаж ENERGIC для мужчин
+              p 16 Марта 2010
+            #bx_3017195560_253.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/e18/e1819d2e031d1c9d5bc7c1512cd23010.jpg', alt='')
+              a(href='/sale/2010/novoe-pokolenie-dekorativnykh-lakov-ot-cnd/') Новое поколение декоративных лаков от CND
+              p 31 Января 2010
+            #bx_3017195560_257.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/a29/a29c023a1090f4e81903e0bff01b72d9.jpg', alt='')
+              a(href='/sale/2009/khimicheskie-pilingi-litsa-ot-dermaquest/') Химические пилинги лица от DERMAQUEST
+              p 1 Ноября 2009
+          .photos-column.column-2
+            #bx_3017195560_1616.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/7f9/7f982c840525c8561c68b3b414b0d125.png', alt='')
+              a(href='/sale/2017/fiore-na-lady-mail-ru/') Fiore на lady.mail.ru
+              p 30 Апреля 2017
+            #bx_3017195560_1613.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/95e/95e683711cc4bf5ef210e1ff8386337f.jpg', alt='')
+              a(href='/sale/2017/novinki-sothys-4-domashnikh-ukhoda/') Новинки Sothys - 4 домашних ухода и сыворотки
+              p 23 Апреля 2017
+            #bx_3017195560_1568.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/3f7/3f7c5dcb73730074acabd4fa3c742187.jpg', alt='')
+              a(href='/sale/2016/v-den-rozhdeniya-skidka-20/') В День рождения скидка - 20%
+              p 16 Октября 2016
+            #bx_3017195560_1544.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/2ce/2ce44e5ffb1398c231fb95d2ef739afc.jpg', alt='')
+              a(href='/sale/2016/happy-weekends/') Happy Weekends - скидка 20% на услуги косметологов и мастеров маникюра
+              p 4 Августа 2016
+            #bx_3017195560_1508.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/01c/01c172cb0b03080a4c4e132160b774d0.jpg', alt='')
+              a(href='/sale/2016/novinka-krasitel-kydra/') Новинка – краситель KYDRA
+              p 14 Июня 2016
+            #bx_3017195560_1418.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/489/489484ec491cf241212c272f23956824.jpg', alt='')
+              a(href='/sale/2015/muzhskaya-epilyatsiya-bystro-i-legko/') Мужская эпиляция: быстро и легко
+              p 1 Сентября 2015
+            #bx_3017195560_1385.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/5f5/5f533ba5449796dbccddbe2bcdab8f85.jpg', alt='')
+              a(href='/sale/2014/u-nas-den-rozhdeniya/') У нас День Рождения!
+              p 21 Ноября 2014
+            #bx_3017195560_204.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/47a/47a8b148d0e3bd25ce04212f92d2e5a5.jpg', alt='')
+              a(href='/sale/2013/rezhim-raboty-salonov-krasoty-fiore-v-novogodnie-prazdniki/') Режим работы салонов красоты «FIORE» в новогодние праздники.
+              p 27 Декабря 2013
+            #bx_3017195560_207.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/bbf/bbfde607c8d0794f995e8e811f81bcbc.jpg', alt='')
+              a(href='/sale/2013/novinka-gel-lak-opi-gelcolor/') Новинка! гель-лак OPI GelColor
+              p 31 Июля 2013
+            #bx_3017195560_210.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/866/866897d040bc36de6023dc23fc7f527f.jpg', alt='')
+              a(href='/sale/2013/pozdravlyaem-s-dnem-svyatogo-valentina/') Поздравляем с днем святого Валентина!
+              p 14 Февраля 2013
+            #bx_3017195560_213.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/125/125e0da114360141c1e89f53b51b1d3c.png', alt='')
+              a(href='/sale/2012/remont-na-bolshoy-ordynke/') Ремонт на Большой Ордынке!
+              p 29 Сентября 2012
+            #bx_3017195560_218.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/198/1982de37c07efa52c6bd00c371750cdd.jpg', alt='')
+              a(href='/sale/2012/covety-gorodskim-modnitsam/') Cоветы городским модницам
+              p 24 Февраля 2012
+            #bx_3017195560_220.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/45b/45b5dd3b9ded9ec9de97f023adb3e544.jpg', alt='')
+              a(href='/sale/2011/sumasshedshiy-obem-volos-khit-oseni/') Сумасшедший объем волос — хит осени!
+              p 15 Ноября 2011
+            #bx_3017195560_224.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/666/666fe78c54e3d82b713dc003b9e7c1cd.jpg', alt='')
+              a(href='/sale/2011/vosk-lycon-epilyatsiya-bez-boli/') Воск LYCON — эпиляция без боли
+              p 27 Июля 2011
+            #bx_3017195560_227.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/754/75496c11d67d8c455eea276250a5bbb2.jpg', alt='')
+              a(href='/sale/2011/novye-ottenki-shellac-shellak/') Новые оттенки SHELLAC (Шеллак)
+              p 2 Июня 2011
+            #bx_3017195560_231.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/8ec/8ec848ca8e7f3270165dcdf88a99e444.jpg', alt='')
+              a(href='/sale/2011/c-1-maya/') C 1 МАЯ!!!
+              p 1 Мая 2011
+            #bx_3017195560_233.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/d0c/d0c712b3cea9e03b46bc8e6a5814ff15.jpg', alt='')
+              a(href='/sale/2011/keratinovoe-vosstanovlenie-i-vypryamlenie-volos/') Кератиновое восстановление и выпрямление волос
+              p 14 Января 2011
+            #bx_3017195560_237.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/ae9/ae98ca0532468490ed77365dcfa39693.jpg', alt='')
+              a(href='/sale/2010/krasivye-i-zdorovye-volosy-vsegda/') Красивые и здоровые волосы всегда!
+              p 29 Сентября 2010
+            #bx_3017195560_239.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/88b/88ba7f1f73891161f53cc6517703612b.jpg', alt='')
+              a(href='/sale/2010/ukhod-za-kozhey-v-osenniy-period-sovety-kosmetologov/') Уход за кожей в осенний период. Советы косметологов.
+              p 13 Сентября 2010
+            #bx_3017195560_242.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/92e/92e1b15faef2cddb54366eef2a521ea5.jpg', alt='')
+              a(href='/sale/2010/macadamia-oil-sredstva-dlya-omolozheniya-zashchity-i-ukhoda-za-volosami/') Macadamia oil средства для омоложения, защиты и ухода за волосами
+              p 29 Июня 2010
+            #bx_3017195560_245.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/7cf/7cfe492f8c7582f7af6461ee8c932365.jpg', alt='')
+              a(href='/sale/2010/nioxin-professionalnye-preparaty-ot-vypadeniya-volos/') NIOXIN — Профессиональные препараты от выпадения волос
+              p 20 Апреля 2010
+            #bx_3017195560_248.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/101/10109289fe7f158564019ff98bbbec91.jpg', alt='')
+              a(href='/sale/2010/massazh-v-salone-fiore-na-michurinskom-7/') Массаж в салоне Fiore на Мичуринском 7
+              p 5 Апреля 2010
+            #bx_3017195560_251.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/14b/14bc89c9a2bd8ea983ad5ef4857b2c73.jpg', alt='')
+              a(href='/sale/2010/tsitrusovoe-sovershenstvo-spa-manikyur-ot-cnd/') Цитрусовое совершенство — спа-маникюр от CND
+              p 1 Марта 2010
+            #bx_3017195560_254.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/26f/26f458c98cb4b702bf4b4d3ca5f83224.jpg', alt='')
+              a(href='/sale/2010/mikrotokovaya-terapiya-noveyshee-slovo-v-kosmetologii/') Микротоковая терапия — новейшее слово в косметологии
+              p 27 Января 2010
+            #bx_3017195560_256.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/ed3/ed3d61710ed4a1991dc51f770167b3ec.jpg', alt='')
+              a(href='/sale/2009/novyy-salon-na-michurinskom-d-7/') НОВЫЙ САЛОН на Мичуринском д.7
+              p 1 Ноября 2009
+          .clear
+          // </section>
+        .tempItemsHandler
+        br
+        style(type='text/css').
+          .load-marker{
+          width: 100%;
+          height:50px;
+          background: url(/bitrix/templates/.default/components/bitrix/system.pagenavigation/autoload.news/img/loading.gif) center -80px no-repeat #fff;
+          }
+          .debug-marker{
+          width:100px;
+          height: 30px;
+          border:1px solid #f00;
+          }
+          .tempItemsHandler{display:none;}
+        script(type='text/javascript').
+          $(document).ready(function(){
+          var curPage = 1;
+          var maxPage = 1;
+          var process = false;
+          $( document).scroll(function() {
+          $('.debug-marker').html(($('.load-marker').offset().top+30) + ' ('+ ( $(this).scrollTop() + $(window).height()) +')');
+          if((($('.load-marker').offset().top+50) < ($(this).scrollTop() + $(window).height()))&&!process){
+          process = true;
+          setTimeout(function(){loadNewPage();}, 500);
+          }
+          });
+          if(curPage == maxPage) $('.load-marker').hide();
+          function loadNewPage(){
+          //alert(curPage+'  '+maxPage);
+          if(curPage < maxPage){
+          curPage++;
+          $('.tempItemsHandler').load('/sale/?PAGEN_1='+curPage+' #itemBlockHandler', function(){
+          $('.column-0', '#itemBlockHandler').html($('.column-0', '#itemBlockHandler').html() + $('.column-0', '.tempItemsHandler').html());
+          $('.column-1', '#itemBlockHandler').html($('.column-1', '#itemBlockHandler').html() + $('.column-1', '.tempItemsHandler').html());
+          $('.column-2', '#itemBlockHandler').html($('.column-2', '#itemBlockHandler').html() + $('.column-2', '.tempItemsHandler').html());
+          $('.tempItemsHandler').html('');
+          process = false;
+          //alert(curPage);
+          });
+          if(curPage == maxPage) $('.load-marker').hide();
+          }
+          }
+          });
+        .tempItemsHandler
+        .load-marker(style='display: none;')
+        .clear
+        h2 Прошедшие акции и новости
+        #itemBlockHandler
+          // <section id="photos">
+          .photos-column.column-0
+            #bx_3017195560_1606.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/7b6/7b61d14f6e91c5b394283504b4c13d6c.jpg', alt='')
+              a(href='/sale/2017/7-8-9-marta-20-skidka/') 7-8-9 марта 20% скидка на все!
+              p 4 Марта 2017
+            #bx_3017195560_1510.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/7ff/7ffed21153f3ef4ff5cfca3472183689.jpg', alt='')
+              a(href='/sale/2016/sale-1/') В День Рождения  скидка — 20%
+              p 16 Августа 2016
+          .photos-column.column-1
+            #bx_3017195560_1570.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/6c6/6c6c7e7b0fe99c3f82e6e7816b99621f.jpg', alt='')
+              a(href='/sale/2016/protsedura-sothys-idealniy-oval-2016/') Процедура Sothys "Идеальный овал" новинка осени '2016
+              p 19 Октября 2016
+            #bx_3017195560_1383.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/190/1906f7fe253d1fb3b90847e3e17522d9.jpg', alt='')
+              a(href='/sale/2014/organicheskoe-okrashivanie-organic-colour-systems/') ОРГАНИЧЕСКОЕ ОКРАШИВАНИЕ ORGANIC COLOUR SYSTEMS
+              p 17 Октября 2014
+          .photos-column.column-2
+            #bx_3017195560_1561.news-page
+              span
+                img(src='http://salonfiore.ru/upload/iblock/252/252cb8b30d16bd4223ccce960365f775.jpg', alt='')
+              a(href='/sale/2016/40-off-rf-lifting/') 40% off на первую процедуру РФ лифтинга!
+              p 30 Августа 2016
+          .clear
+          // </section>
+      .clear
