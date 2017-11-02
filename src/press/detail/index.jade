@@ -4,53 +4,35 @@ block config
   - var baseUrl = '../../'
 
 block content
-    .content
-      .h5-online
-        a.button-fancybox(href='#modal-online', onclick="javascript:modal();ga('send', 'event', 'booking_click', 'click');yaCounter37721308.reachGoal('booking_click');") ЗАПИСЬ ОНЛАЙН
-        .news-list
-          p#bx_1454625752_1642.news-item
-            a.banner(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
-        .clear
-      .h5-left
-        style.
-          .h5-left ul li a.active {color: #E10084;}
-      .h5-right
-        .full-content
-          .single-news
-            .col-1.picture
-              img.detail_picture(border='0', src='http://salonfiore.ru/upload/iblock/657/6578b5a90a47d355237b086e028de901.jpg', alt='Cosmopolitan апрель 2017', title='Cosmopolitan апрель 2017')
-            .col-3.description
-              h1 Cosmopolitan апрель 2017
-              span 29 Марта 2017
-              div
-                img(src='http://salonfiore.ru/upload/medialibrary/762/762e772bb1e9bdcd205223ab8b08c31f.jpg', title='FullSizeRender-1.jpg', border='0', alt='FullSizeRender-1.jpg', width='668', height='891')
-                div
-                  br
-                div
-                  img(src='http://salonfiore.ru/upload/medialibrary/3ff/3ffd5423960d3e7b821874a38c4bf1b0.jpg', title='FullSizeRender-2.jpg', border='0', alt='FullSizeRender-2.jpg', width='672', height='891')
-                  br
-              div(style='clear:both')
-              br
-            .clear
-            .col-4.otheritems
-              .col-1
-                a(href='/press/women-s-health-july-2016/')
-                  img(src='http://salonfiore.ru/upload/iblock/2e3/2e3fe7c6165a1200b3c3c7052aa77ef7.jpg', alt="Women's Health, июль 2016")
-                  span Women's Health, июль 2016
-              .col-1
-                a(href='/press/schastlivie-roditeli-june-2016/')
-                  img(src='http://salonfiore.ru/upload/iblock/a55/a55debdda4480c432b5f467f801d7ded.jpg', alt='Счастливые родители июнь 2016')
-                  span Счастливые родители июнь 2016
-              .col-1
-                a(href='/press/fashion-collection-de%D1%81-2016-jan-2017/')
-                  img(src='http://salonfiore.ru/upload/iblock/446/4463e5ab0ecd79fc6a779c5ebc2495bb.png', alt='Fashion Collection декабрь 2016 - январь 2017')
-                  span Fashion Collection декабрь 2016 - январь 2017
-              .col-1
-                a(href='/press/domashniy-ochag-june-2016/')
-                  img(src='http://salonfiore.ru/upload/iblock/822/8223df25fe16cf307fbb94de68ea396c.jpg', alt='Домашний Очаг, июнь 2016')
-                  span Домашний Очаг, июнь 2016
-            br.clr
-            br
-            br
-            a(style='text-transform:uppercase;', href='/press/') К списку статей
-      .clear
+    .l-grid.l-grid--container
+        .l-row
+            .l-col.l-col--xs-4.l-col--md-offset-2.ui-page-banner
+                a.ui-page-banner__link(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        .l-row
+            .l-col.l-col--xs-12
+                .ui-press-detail
+                    .ui-press-detail__heading Cosmopolitan апрель 2017
+                    .ui-press-detail__date 29 Марта 2017
+                    .ui-press-detail__img
+                        img.ui-img.ui-press-detail-img(src='http://salonfiore.ru/upload/medialibrary/762/762e772bb1e9bdcd205223ab8b08c31f.jpg', title='FullSizeRender-1.jpg', alt='FullSizeRender-1.jpg')
+                    .ui-press-detail__img
+                        img.ui-img.ui-press-detail-img(src='http://salonfiore.ru/upload/medialibrary/3ff/3ffd5423960d3e7b821874a38c4bf1b0.jpg', title='FullSizeRender-2.jpg', alt='FullSizeRender-2.jpg')
+                    .l-grid.l-grid--container
+                        .l-row
+                            .l-col.l-col--xs-3
+                                a.ui-press-cart-mini(href='/press/women-s-health-july-2016/')
+                                    .ui-press-cart-mini__img(style="background-image: url('http://salonfiore.ru/upload/iblock/2e3/2e3fe7c6165a1200b3c3c7052aa77ef7.jpg')")
+                                    .ui-press-cart-mini__title Women's Health, июль 2016
+                            .l-col.l-col--xs-3
+                                a.ui-press-cart-mini(href='/press/schastlivie-roditeli-june-2016/')
+                                    .ui-press-cart-mini__img(style="background-image: url('http://salonfiore.ru/upload/iblock/a55/a55debdda4480c432b5f467f801d7ded.jpg')")
+                                    .ui-press-cart-mini__title Счастливые родители июнь 2016
+                            .l-col.l-col--xs-3
+                                a.ui-press-cart-mini(href='/press/fashion-collection-de%D1%81-2016-jan-2017/')
+                                    .ui-press-cart-mini__img(style="background-image: url('http://salonfiore.ru/upload/iblock/446/4463e5ab0ecd79fc6a779c5ebc2495bb.png')")
+                                    .ui-press-cart-mini__title Fashion Collection декабрь 2016 - январь 2017
+                            .l-col.l-col--xs-3
+                                a.ui-press-cart-mini(href='/press/domashniy-ochag-june-2016/')
+                                    .ui-press-cart-mini__img(style="background-image: url('http://salonfiore.ru/upload/iblock/822/8223df25fe16cf307fbb94de68ea396c.jpg')")
+                                    .ui-press-cart-mini__title Домашний Очаг, июнь 2016
+                    a.ui-press-detail__link.ui-press-detail__link--uppercase(href='/press/') К списку статей
