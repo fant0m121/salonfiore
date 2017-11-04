@@ -5,93 +5,90 @@ block config
   - var baseUrl = '../'
 
 block content
-    .content
-      .h5-online
-        .news-list
-          p#bx_1454625752_1642.news-item
-            a.banner(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
-        .clear
-      .h5-left
-        span.h1 Магазин
-        ul.left-menu-services
-          li
-            a(href='/catalog/circadia/') circadia
-          li
-            a(href='/catalog/sothys/') Sothys
-          li
-            a(href='/catalog/organic/') Organic Color System
-          li
-            a(href='/catalog/lebel-cosmetics/') Lebel Cosmetics
-          li
-            a(href='/catalog/keratin-complex/') Keratin Complex
-          li
-            a(href='/catalog/mossa-green-light/') Mossa Green Light
-          li
-            a(href='/catalog/christina-fitzgerald/') Christina Fitzgerald
-          li
-            a(href='/catalog/aksessuary-dlya-volos/') Аксессуары Для Волос
-          li
-            a(href='/catalog/avtorskaya-bizhuteriya/') Авторская Бижутерия
-      .h5-right
-        style.
-        #bx_1315304335_68.shop-main.rnone(onclick="location.href='/catalog/circadia/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/011/011850eb36dab8ce9e25156e8e7f9f35.jpg', alt='')
-          a.shop-link(href='/catalog/circadia/') circadia
-          p
-        #bx_1315304335_23.shop-main(onclick="location.href='/catalog/sothys/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/b4a/b4aa3c1fe10a2855e5f71ae4ad2a90a3.png', alt='')
-          a.shop-link(href='/catalog/sothys/') Sothys
-          p
-        #bx_1315304335_73.shop-main(onclick="location.href='/catalog/organic/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/7f7/7f72c1136242d545256c9b2469edd261.jpg', alt='')
-          a.shop-link(href='/catalog/organic/') Organic Color System
-          p
-        #bx_1315304335_32.shop-main.rnone(onclick="location.href='/catalog/lebel-cosmetics/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/587/5873cad58059ac7cc89932fae9a29fc6.jpg', alt='')
-          a.shop-link(href='/catalog/lebel-cosmetics/') Lebel Cosmetics
-          p
-        #bx_1315304335_33.shop-main(onclick="location.href='/catalog/keratin-complex/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/555/555d4bb57129f7624750b5ae35b8b328.jpg', alt='')
-          a.shop-link(href='/catalog/keratin-complex/') Keratin Complex
-          p
-        #bx_1315304335_34.shop-main(onclick="location.href='/catalog/mossa-green-light/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/d04/d0402767f76d0472e8a6736fb8ab145b.png', alt='')
-          a.shop-link(href='/catalog/mossa-green-light/') Mossa Green Light
-          p
-        #bx_1315304335_26.shop-main.rnone(onclick="location.href='/catalog/christina-fitzgerald/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/8a2/8a2be4a674067ceef2c2ea6c321142cc.jpg', alt='')
-          a.shop-link(href='/catalog/christina-fitzgerald/') Christina Fitzgerald
-          p
-        #bx_1315304335_38.shop-main(onclick="location.href='/catalog/aksessuary-dlya-volos/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/9f5/9f51c287d82203d2e7379149fa879a97.jpg', alt='')
-          a.shop-link(href='/catalog/aksessuary-dlya-volos/') Аксессуары Для Волос
-          p
-        #bx_1315304335_39.shop-main(onclick="location.href='/catalog/avtorskaya-bizhuteriya/'")
-          span
-            img(src='http://salonfiore.ru/upload/iblock/1bd/1bd00fc98073bf928301161cd8a59699.JPG', alt='')
-          a.shop-link(href='/catalog/avtorskaya-bizhuteriya/') Авторская Бижутерия
-          p
-        .h5-info1.sg_add_services
-          div
-            h1 Все бренды
-            ul
-            ul
-        .h5-info2.sale_in_secrives
-          span
-            img(src='http://salonfiore.ru/upload/iblock/91e/91e5f7849f47b6fdb293f07e1511331b.jpg', alt='')
-          span.span-name
-            a(href='/sale/sale-2.html') Подарочные сертификаты
-        div(style='clear:both;')
-        .sg_section_info
-          h1 Каталог
-          p
-            | Салон красоты Fiore предлагает эффективные программы по уходу за кожей лица с применением средств Sothys — базовые, омолаживающие, сезонные и др. Также салон предлагает средства для домашнего использования: антицеллюлитные крема (эффективность после 2 недель), средства от растяжек и для коррекции проблемных участков.
-      .clear
+    .l-grid.l-grid--container
+        .l-row
+            .l-col.l-col--xs-4.l-col--md-offset-2.ui-page-banner
+                a.ui-page-banner__link(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        .l-row
+            .l-col.l-col--xs-2
+                .ui-heading.ui-heading--lvl4.ui-heading--default Акции
+                ul.ui-left-menu
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/circadia/') circadia
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/sothys/') Sothys
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/organic/') Organic Color System
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/lebel-cosmetics/') Lebel Cosmetics
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/keratin-complex/') Keratin Complex
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/mossa-green-light/') Mossa Green Light
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/christina-fitzgerald/') Christina Fitzgerald
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/aksessuary-dlya-volos/') Аксессуары Для Волос
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/catalog/avtorskaya-bizhuteriya/') Авторская Бижутерия
+            .l-col.l-col--xs-10.l-col--no-gutters
+                .l-grid.l-grid--container
+                    .l-row
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/b4a/b4aa3c1fe10a2855e5f71ae4ad2a90a3.png')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/sothys/') Sothys
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/7f7/7f72c1136242d545256c9b2469edd261.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/organic/') Organic Color System
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/011/011850eb36dab8ce9e25156e8e7f9f35.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/circadia/') circadia
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/555/555d4bb57129f7624750b5ae35b8b328.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/keratin-complex/') Keratin Complex
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/d04/d0402767f76d0472e8a6736fb8ab145b.png')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/mossa-green-light/') Mossa Green Light
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/587/5873cad58059ac7cc89932fae9a29fc6.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/lebel-cosmetics/') Lebel Cosmetics
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/9f5/9f51c287d82203d2e7379149fa879a97.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/aksessuary-dlya-volos/') Аксессуары Для Волос
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/1bd/1bd00fc98073bf928301161cd8a59699.JPG')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/avtorskaya-bizhuteriya/') Авторская Бижутерия
+                        .l-col.l-col--xs-4.l-col--xs-flex
+                            .ui-product-cart
+                                .ui-product-cart__img(style="background-image: url('http://salonfiore.ru/upload/iblock/8a2/8a2be4a674067ceef2c2ea6c321142cc.jpg')")
+                                .ui-product-cart__title 
+                                    a(href='/catalog/christina-fitzgerald/') Christina Fitzgerald
+                    .l-row
+                        .l-col.l-col--xs-8
+                            .ui-product
+                                .ui-product__heading Все бренды
+                        .l-col.l-col--xs-4
+                            .ui-product
+                                .ui-product__link 
+                                    a(href='/sale/sale-2.html') Подарочные сертификаты
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-heading.ui-heading--lvl2.ui-heading--default Каталог
+                            p
+                              | Салон красоты Fiore предлагает эффективные программы по уходу за кожей лица с применением средств Sothys — базовые, омолаживающие, сезонные и др. Также салон предлагает средства для домашнего использования: антицеллюлитные крема (эффективность после 2 недель), средства от растяжек и для коррекции проблемных участков.
