@@ -103,6 +103,17 @@
         &:hover
             color #e10084
 
+        &--active
+            text-decoration none
+            color #e10084
+
+    &--indent
+        a
+            text-transform uppercase
+
+        a + a
+            padding-left 15px
+
 .ui-footer
     background url(/images/footer-bg.png) repeat-x top center
     padding-bottom 20px
@@ -389,6 +400,15 @@
     &__description
         font 14px Arial
         color #fff
+
+        a
+            font 14px Arial
+            color #fff
+            text-decoration underline
+
+        p
+            padding 0
+            margin 0
 
 .ui-button
     display inline-block
@@ -961,5 +981,45 @@
         ol
             li
                 margin 0 0 10px 20px
+
+.ui-question-block
+    background #fff
+    margin-bottom 20px
+
+    &__header
+        padding 20px
+
+.ui-faq
+    padding 10px 0
+
+.ui-question
+    display flex
+    padding 0 20px
+    font 14px/20px Arial
+    color #1d2e43
+
+    span + span
+        padding-left 20px
+
+.ui-answer
+    padding 20px 50px
+    margin 10px 0
+    background #f3f3f3
+
+    &__header
+        display flex
+        align-items center
+        background #fff
+
+    &__img
+        width 30px
+        height 30px
+
+    &__info
+        padding-left 20px
+        color #666
+
+    &__content
+        padding 20px 0
 
 @import './style'

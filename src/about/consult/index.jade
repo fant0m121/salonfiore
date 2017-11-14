@@ -4,4 +4,94 @@ block config
     - var baseUrl = '../../'
 
 block content
-    p about/consult page
+    .l-grid.l-grid--container
+        .l-row
+            .l-col.l-col--xs-4.l-col--md-offset-2.ui-page-banner
+                a.ui-page-banner__link(href='/sale/2017/halloween-26-27-28/') Halloween Party 26-27-28 октября!
+        .l-row
+            .l-col.l-col--xs-2
+                .ui-heading.ui-heading--lvl4.ui-heading--default О нас
+                ul.ui-left-menu
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/about/team/') Наша команда
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/about/gallery/') ФОТОГАЛЕРЕЯ
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/articles/') Статьи
+                    li.ui-left-menu__item
+                        a.ui-left-menu__link(href='/about/consult/') Консультации специалистов
+            .l-col.l-col--xs-10.l-col--no-gutters
+                .l-grid.l-grid--container
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-reviews-box
+                                .l-grid.l-grid--container
+                                    .l-row.l-row--xs-middle
+                                        .l-col.l-col--xs-3
+                                            .ui-reviews-box__button
+                                                a.ui-button.ui-button--lg.ui-button__review(href='#modal', onclick="ga('send', 'event', 'question_click', 'click');yaCounter37721308.reachGoal('question_click');") Задать вопрос
+                                        .l-col.l-col--xs-9
+                                            .ui-reviews-box__description 
+                                                p 
+                                                    | Если вы не нашли ответа на свой вопрос напишите на нашу 
+                                                    a(href='#') эл. почту
+                                                    |  или задайте новый вопрос нажав на кнопку задать вопрос.
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-page-header.ui-page-header--indent
+                                 a.ui-page-header__link.ui-page-header__link--active(href='#') Все
+                                 a.ui-page-header__link(href='#') Уход за волосами
+                                 a.ui-page-header__link(href='#') Уход за лицом
+                                 a.ui-page-header__link(href='#') Уход за руками и ногами	
+                                 a.ui-page-header__link(href='#') Уход за телом
+                    .l-row
+                        .l-col.l-col--xs-12
+                            .ui-question-block
+                                .ui-question-block__header.ui-heading.ui-heading--lvl4 Уход за волосами
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Помогите, пожалуйста, решить мою проблему. Дело в том, что у меня ломкие ногти, к тому же на больших пальцах рук они неровные и сделать красивый маникюр для меня очень сложно. Какие средства вы посоветуете?
+                                    .ui-answer
+                                        .ui-answer__header
+                                            .ui-answer__img
+                                                img(src='http://salonfiore.ru/upload/resize_cache/iblock/20d/30_30_2/20dbdc57a7b7f42713144f69221fe2b7.jpg')
+                                            .ui-answer__info
+                                                span Отвечает: 
+                                                a.ui-link(href='/about/team/babayan-viktoriya/') Бабаян Виктория
+                                                span  (Мастер маникюра)
+                                        .ui-answer__content Пример ответа
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Я недавно сделала мелирование, какой вид биоламинирования волос мне можно сделать?
+                                    .ui-answer
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Мои волосы имеют разную структуру, сверху они прямые, а снизу вьются. Можно ли как-то это исправить? Или единственное решение — это утюжок?
+                                    .ui-answer
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Какие виды моделирования подойдут для тонких волос, которые не переносят укладки лаком, пенкой и прочими средствами, а также сушки феном?
+                                    .ui-answer
+                            .ui-question-block
+                                .ui-question-block__header.ui-heading.ui-heading--lvl4 Уход за лицом
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Я слышала много положительных отзывов о японском маникюре. Поможет ли он при сильных расслоениях ногтей?
+                                    .ui-answer
+                                .ui-faq
+                                    a.ui-question(href='#')
+                                        span 
+                                            img(src='http://salonfiore.ru/bitrix/templates/fiore_inner_transparent/img/open_.png')
+                                        span Возможна ли анестезия при восковой эпиляции бикини?
+                                    .ui-answer
+                                
