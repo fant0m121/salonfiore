@@ -24,7 +24,7 @@ body.ui-page
     .ui-header
         .l-grid.l-grid--container
             .l-row.l-row--xs-space-between
-                .l-col.l-col--xs-7.l-col--md-auto
+                .l-col.l-col--xs-12.l-col--md-auto.l-col--lg-auto
                     .ui-header__menu
                         ul.ui-header-menu
                             li.ui-header-menu__item
@@ -41,7 +41,7 @@ body.ui-page
                                 a.ui-header-menu__link(href='/reviews/') ОТЗЫВЫ
                             li.ui-header-menu__item
                                 a.ui-header-menu__link(href='/contacts/') Контакты
-                .l-col.l-col--xs-5.l-col--md-auto
+                .l-col.l-col--xs-12.l-col--md-auto.l-col--lg-auto
                     .ui-header__phone 
                         a.ui-header-phone(href='tel:+74959539815', onclick="ga('send', 'event', 'tel', 'click');yaCounter37721308.reachGoal('tel');") +7 (495) 953-98-15
                         a.ui-header-phone(href='intent://send/+79654303273#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end') What's up: +7 (965) 430-32-73
@@ -68,7 +68,7 @@ body.ui-page
                                 a.ui-bottom-menu__link(href='/reviews/') ОТЗЫВЫ
                             li.ui-bottom-menu__item
                                 a.ui-bottom-menu__link(href='/contacts/') Контакты
-                .l-col.l-col--xs-12.l-col--md-auto
+                .l-col.l-col--xs-12.l-col--md-auto.h-text--xs-center
                     .ui-price-list(onmouseover="$('.js-price-more').toggle(true);", onmouseout="$('.js-price-more').toggle(false);")
                         a.ui-price-list__link(href='#', onclick='return false;') ПРАЙС-ЛИСТ
                         .ui-price-list__content.js-price-more
@@ -96,7 +96,8 @@ body.ui-page
                         .ui-footer__address-line
                             span.ya-phone 8 (495) 953-98-15
                 .l-col.l-col--xs-12.l-col--md-4
-                    a.button-footer(href='#modal-online', onclick='javascript:modal();') ЗАПИСЬ ОНЛАЙН
+                    .ui-footer__button
+                        a.ui-button.ui-button--xs(href='#modal-online', onclick='javascript:modal();') ЗАПИСЬ ОНЛАЙН
 
     block scripts
         script(src= baseUrl + 'scripts/main.js')
